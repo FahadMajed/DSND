@@ -3,14 +3,22 @@ Read file into texts and calls.
 It's ok if you don't understand how to read files.
 """
 import csv
+from text_record import TextRecord
+from call_record import CallRecord
+from typing import List
+
 
 with open('texts.csv', 'r') as f:
     reader = csv.reader(f)
-    texts = list(reader)
+    texts: List[TextRecord] = []
+    for record in reader:
+        texts.append(TextRecord(record))
 
 with open('calls.csv', 'r') as f:
     reader = csv.reader(f)
-    calls = list(reader)
+    calls: List[CallRecord] = []
+    for record in reader:
+        calls.append(CallRecord(record))
 
 """
 TASK 4:
@@ -25,3 +33,39 @@ Print a message:
 The list of numbers should be print out one per line in lexicographic order with no duplicates.
 """
 
+possible_telemarketers = []
+
+
+def get_possible_telemarketers():
+
+    for call in calls:
+        add_caller(call.sending_number)
+
+    for call in calls:
+        reciever = call.recieving_number
+        remove_telemarketer(reciever)
+
+    for text in texts:
+        remove_telemarketer(text.sending_number)
+        remove_telemarketer(text.recieving_number)
+
+    return possible_telemarketers
+
+
+def remove_telemarketer(number):
+    if number in possible_telemarketers:
+        possible_telemarketers.remove(number)
+
+
+def add_caller(number):
+    if number not in possible_telemarketers:
+        possible_telemarketers.append(number)
+
+
+def print_telemarketers():
+    template = "These numbers could be telemarketers: {}"
+    message = template.format(get_possible_telemarketers())
+    print(message)
+
+
+print_telemarketers()

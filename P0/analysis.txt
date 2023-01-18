@@ -1,0 +1,5 @@
+Task 0: O(1), since it is indexed access to a list
+Task 1: O(2n)
+Task 2: O(2n)
+Task 3: A. O(n) B. O(2n)
+Task 4: O(3n)
