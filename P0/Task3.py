@@ -147,7 +147,7 @@ def get_total_bangalorian_calls():
 
 
 def calculate_percantage(calls_to_bangalore, total_calls):
-    return round(calls_to_bangalore/total_calls, 2)
+    return round(calls_to_bangalore/total_calls, 4) * 100
 
 
 def print_percantage():
