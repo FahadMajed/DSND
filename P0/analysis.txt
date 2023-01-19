@@ -1,5 +1,7 @@
 Task 0: O(1), since it is indexed access to a list
 Task 1: O(2n)
 Task 2: O(2n)
-Task 3: A. O(n) B. O(2n)
-Task 4: O(3n)
+Task 3:
+ A. since we have one for loop on n, and we will sort the result using Timsort, the effiency can be described as O(nlog(n) + n)
+ B. O(2n), since we have two for loops on n,
+Task 4: O(nlog(n) + 3n), the first expression in for the sorting, the other for finding the numbers using three for loops
