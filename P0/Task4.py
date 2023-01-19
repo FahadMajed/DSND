@@ -63,10 +63,10 @@ def add_caller(number):
 
 
 def print_telemarketers():
-    template = "These numbers could be telemarketers: {}"
+    template = "These numbers could be telemarketers:"
     sorted_numbers = sorted(get_possible_telemarketers())
-    message = template.format(sorted_numbers)
-    print(message)
+    print(template)
+    print("\n".join(sorted_numbers))
 
 
 print_telemarketers()

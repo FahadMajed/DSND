@@ -98,10 +98,10 @@ def get_mobile_prefix(number):
 
 
 def print_prefixes():
-    template = "The numbers called by people in Bangalore have codes: {}"
+    template = "The numbers called by people in Bangalore have codes: "
     sorted_numbers = sorted(get_numbers_prefixes_called_by_bangalore())
-    message = template.format(sorted_numbers)
-    print(message)
+    print(template)
+    print("\n".join(sorted_numbers))
 
 
 print_prefixes()

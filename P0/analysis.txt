@@ -1,6 +1,6 @@
 Task 0: O(1), since it is indexed access to a list
-Task 1: O(2n)
-Task 2: O(2n)
+Task 1: O(2n), we have two for loops on the number of records
+Task 2: O(2n), we have to loop over the records, and loop again to find the max value by running over all the records (n)
 Task 3:
  A. since we have one for loop on n, and we will sort the result using Timsort, the effiency can be described as O(nlog(n) + n)
  B. O(2n), since we have two for loops on n,
