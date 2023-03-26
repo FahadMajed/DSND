@@ -1,0 +1,8 @@
+for the Active Directory, I decided to declare a dictiorany for users and groups for effiecent look up,
+
+COMPLEXITY (is_user_in_group):
+space -> O(1)
+time -> O(1), if the key (user) exists return true, false otherwise
+
+
+

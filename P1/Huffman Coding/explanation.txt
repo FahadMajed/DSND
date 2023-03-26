@@ -1,0 +1,15 @@
+for the Huffman Enoding, I decided first generate the priotirty queue using heap queue, then merge the nodes to generate the tree
+based on the priority, generate binary codes and finally generate the encoding
+
+for Decoding, it will simply check if the bit is zero, traverse through left, if 1 traverse through right, until reaching
+a character, then add it to the decoding string
+
+COMPLEXITY (Encoding):
+space -> O(n) size of the input text
+time -> O(n log n), the heap queue requires n log n to insert to the queue since it will traverse through the tree every time
+
+COMPLEXITY (Intersection):
+space -> O(1) simple return for decoded text
+time -> O(n), looping through the encoded text characters
+
+

@@ -82,7 +82,7 @@ def intersection(llist_1, llist_2):
 
     for node in llist_1.nodes:
 
-        if node in llist_2.nodes:
+        if node in llist_2.nodes and node not in intersection.nodes:
             intersection.append(node)
 
     return intersection

@@ -76,7 +76,7 @@ class LRU_Cache(object):
         self.cache[oldest_item] = None
 
     def is_recent(self, key):
-        print(self.oldest_item_tracker[0])
+
         if (self.reached_capacity() == False):
             return True
 

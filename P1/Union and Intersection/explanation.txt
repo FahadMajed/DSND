@@ -1,0 +1,13 @@
+for the Union, I decided to loop through the first list nodes and insert them all, then insert the unique nodes from the other list
+for Intersection, I decided to loop through the first list nodes, then see if the node exists in the second list, if so add
+it to ther intersection
+
+COMPLEXITY (Union):
+space -> O(n)
+time -> O(n), looping through the whole lists
+
+COMPLEXITY (Intersection):
+space -> O(n)
+time -> O(n^2), looping through the whole list and then loop each item to the other list
+
+

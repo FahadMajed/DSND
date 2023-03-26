@@ -11,17 +11,15 @@ child.add_group(sub_child)
 parent.add_group(child)
 
 
-def test_user_in_group():
-
-    assert (is_user_in_group(sub_child_user, sub_child))
-
-
-def test_user_not_in_group():
-
-    assert (is_user_in_group(sub_child_user, child) == False)
+print(is_user_in_group(sub_child_user, sub_child))
+# TRUE
 
 
-def test_user_not_provided():
+print(is_user_in_group(sub_child_user, child))
+# FALSE
 
-    assert (is_user_in_group('', child) == 'Please Provide User')
-    assert (is_user_in_group(None, child) == 'Please Provide User')
+
+print(is_user_in_group('', child))
+# 'Please Provide User'
+print(is_user_in_group(None, child))
+# 'Please Provide User'

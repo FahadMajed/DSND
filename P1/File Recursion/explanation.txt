@@ -1,0 +1,10 @@
+for the File Recursion, i decided to use recurion since it is the easiest way to traverse the directories
+the recursion will occur unless the provided file is not directory, then the program will check if it matches
+the suffix or not
+
+COMPLEXITY:
+space -> O(n), the number of files in the directories that will be stored in [files]
+time -> O(n), the number of files in the directories
+
+
+

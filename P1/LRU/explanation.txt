@@ -1,0 +1,13 @@
+for the LRU cache, i decided to declare a cache dictiorany and a list to track the most recent calls, whenever GET is called 
+the entry will be removed pushed to the ended to the list, if the cache is full, the first element in the oldest_item_tracker
+will be removed since it is the least recent
+
+COMPLEXITY:
+set:
+space -> O(1)
+time -> O(1)
+
+get:
+space -> O(1)
+time -> O(1), unless the recenecy needs and update the worst case will be O(n), and on average O(n/2)
+

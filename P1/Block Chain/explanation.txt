@@ -1,0 +1,9 @@
+for the Block Chain, I decided to Linked List since it is the perfect represntation for a block chain,
+each node will have prev field where the previos node hash is stored
+
+COMPLEXITY (add_block):
+space -> O(1)
+time -> O(1), the block chain will insert at the end only
+
+
+
