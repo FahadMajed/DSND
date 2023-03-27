@@ -17,3 +17,10 @@ try:
 
 except:
     print("Exception")
+
+
+files_end_with_abc = find_files(".abc", "./testdir")
+
+
+print(files_end_with_abc)
+# []

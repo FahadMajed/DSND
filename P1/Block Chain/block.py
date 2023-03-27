@@ -23,3 +23,17 @@ class Block:
 
     def data_is_empty(self):
         return self.data == "" or self.data == None
+
+    def __str__(self) -> str:
+        self.print_time()
+        print("Data: " + str(self.data))
+        print("SHA256 Hash: " + str(self.hash))
+        print("Previous Hash: " + str(self.previous_hash))
+        print("---------------------------------------------")
+        return ""
+
+    def print_time(self):
+        time = self.timestamp[0]
+        print("Timestamp: " + str(time.tm_year) + "-" +
+              str(time.tm_mon) + "-" + str(time.tm_mday) + " " + str(time.tm_hour) + ":" +
+              str(time.tm_min) + ":" + str(time.tm_sec))

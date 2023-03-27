@@ -57,3 +57,40 @@ print(union(linked_list_5, linked_list_6))
 print('intersection')
 print(intersection(linked_list_5, linked_list_6))
 # Please Provice non empty list
+
+linked_list_5 = LinkedList()
+linked_list_6 = LinkedList()
+
+element_1 = [1, 2]
+element_2 = []
+
+for i in element_1:
+    linked_list_5.append(i)
+
+for i in element_2:
+    linked_list_6.append(i)
+print('union')
+print(union(linked_list_5, linked_list_6))
+# Please Provice non empty list
+print('intersection')
+print(intersection(linked_list_5, linked_list_6))
+# Please Provice non empty list
+
+
+linked_list_5 = LinkedList()
+linked_list_6 = LinkedList()
+
+element_1 = [1, 1, 1, 2, 2, 2, 3, 3, 3]
+element_2 = [3, 3, 1, 1, 2, 2]
+
+for i in element_1:
+    linked_list_5.append(i)
+
+for i in element_2:
+    linked_list_6.append(i)
+print('union')
+print(union(linked_list_5, linked_list_6))
+# 1 -> 2 -> 3 ->
+print('intersection')
+print(intersection(linked_list_5, linked_list_6))
+# 1 -> 2 -> 3 ->
