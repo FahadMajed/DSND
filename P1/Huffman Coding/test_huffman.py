@@ -24,3 +24,21 @@ try:
 except:
     print('Please Provide Test')
 #
+
+huffman = HuffmanCipher("aaaa")
+code = huffman.encode()
+print(code)
+# 0000
+
+
+print(huffman.decode(code, Node("a", 4)))
+# aaaa
+
+
+huffman = HuffmanCipher("a")
+code = huffman.encode()
+print(code)
+# 0
+
+print(huffman.decode(code, Node("a", 1)))
+# a

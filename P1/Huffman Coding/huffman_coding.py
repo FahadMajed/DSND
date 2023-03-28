@@ -14,6 +14,8 @@ class HuffmanCipher:
         self._init_priority_queue()
         self._merge_nodes()
         root = self._pop()[1]
+        if root.character != "":
+            return "0" * root.frequency
         codes = self._generate_binary_codes(root, "")
         self._push(root)
         return self._generate_encoded_data(codes)
@@ -85,7 +87,8 @@ class HuffmanCipher:
 
         decoded_data = ""
         current_node = root
-
+        if root.left == None and root.right == None:
+            return root.character * root.frequency
         for bit in encoded_data:
 
             if bit == "0":
