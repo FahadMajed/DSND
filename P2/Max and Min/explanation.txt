@@ -1,0 +1,13 @@
+I chose this approach because it is a simple and efficient algorithm that 
+finds the minimum and maximum values in an unsorted list of integers 
+in O(n) time complexity, where n is the length of the list. 
+
+The algorithm is based on the observation that the minimum and maximum values 
+in a list can be found by iterating over the list and keeping track 
+of the current minimum and maximum values seen so far, and updating them as necessary.
+
+This implementation has a time complexity of O(n) because it iterates over the
+list of integers once.
+
+It has a space complexity of O(1) because it only uses a constant amount of extra space to store the `min_val` and `max_val` variables.
+

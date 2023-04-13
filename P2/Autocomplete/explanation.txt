@@ -1,0 +1,16 @@
+
+The implementation uses a Trie data structure to store the words. 
+A Trie is a tree-like data structure that is commonly used for efficient string 
+searching and prefix matching. In a Trie, each node represents a character in a word,
+and the edges represent the characters that can follow it. 
+The nodes that represent the last character of a word are marked as word nodes. 
+This data structure is efficient for storing large collections 
+of words and can be used for fast prefix matching and autocomplete.
+
+The time complexity of this algorithm of finding suffixes is O(k * n), 
+where k is the number of complete words below the current node, 
+and n is the average length of the complete words. 
+
+The space complexity of this algorithm is also O(k * n),
+since we are creating a new list of suffixes for each call to the method.
+

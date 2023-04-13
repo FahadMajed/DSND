@@ -1,0 +1,13 @@
+The Rearrange Array Elements algorithm rearranges an array of 
+integers into two numbers such that their sum is maximum. To do this,
+the algorithm sorts the input array in descending order using merge sort,
+and then builds the two numbers by alternating the most significant digit between them.
+
+The time complexity of the algorithm is O(nlog(n)), where n is the 
+length of the input array. This is because the merge sort algorithm used 
+to sort the array has a time complexity of O(nlog(n)), and the digit-building 
+step requires iterating over the sorted array, which takes O(n) time.
+
+The space complexity of the algorithm is also O(nlog(n)), 
+because the merge sort algorithm requires O(n) space to store the 
+temporary arrays used during the merge phase.

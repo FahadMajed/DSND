@@ -1,0 +1,9 @@
+The algorithm works by using binary search to find the target value in 
+the rotated sorted array. The key idea is to use the fact that one half of 
+the array must be sorted at any given time, even though the entire array may not be sorted.
+
+We check which half is sorted and narrow down the search space accordingly. 
+
+The time complexity of this algorithm is O(log n).
+
+The space complexity is O(1)

@@ -1,0 +1,21 @@
+The Newton-Raphson method is an iterative algorithm for finding the
+roots of a function. It can be used to approximate the
+square root of a number, by finding the root of the function `f(x) = x^2 - num`.
+
+The idea behind the Newton-Raphson method is to start with an initial guess `x0`,
+and then iteratively improve the guess using the formula:
+
+
+x1 = x0 - f(x0) / f'(x0)
+
+
+where `f'(x)` is the derivative of `f(x)`. This formula gives the next guess `x1`,
+which is closer to the true root of the function than the previous guess `x0`.
+he process is repeated until the difference between the current guess and the previous 
+guess is less than a desired tolerance.
+
+For the case of finding the square root of a number `num`, we can use the function `f(x) = x^2 - num`. Its derivative is `f'(x) = 2x`, so the Newton-Raphson formula becomes:
+
+
+x1 = (x0 + num / x0) / 2
+

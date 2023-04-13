@@ -1,0 +1,18 @@
+The trie is used to store the registered resources and their corresponding
+handlers in the router. When a request comes in, 
+the resource is split into parts and looked up in the trie 
+to find the corresponding handler.
+
+The time complexity of the `add_handler()` method is O(m), 
+where m is the number of resource parts, since it needs to 
+traverse the trie for each part of the resource. 
+
+The space complexity of the `add_handler()` method is also O(m),
+since it needs to store a node for each part of the resource.
+
+The time complexity of the `lookup()` method is O(m), where m is the number of resource parts, 
+since it needs to traverse the trie for each part of the resource. 
+
+The space complexity of the `lookup()` method is O(1), 
+since it only needs to store a constant amount of data 
+(the `handler` attribute of the last node in the resource).

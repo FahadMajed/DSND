@@ -1,0 +1,11 @@
+
+The algorithm works by maintaining three pointers: `left`, `mid`, and `right`. 
+The `left` pointer points to the end of the sorted region of 0's, 
+the `mid` pointer scans the array from left to right, and the `right`
+pointer points to the start of the sorted region of 2's.
+
+The time complexity of the algorithm is O(n), where n is the length of the input array,
+because the algorithm performs a single traversal of the input array. 
+
+The space complexity of the algorithm is O(1), because the algorithm only uses a constant amount
+of extra space to store the three pointers and temporary variables used for swapping.
